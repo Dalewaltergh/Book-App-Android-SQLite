@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+    <EditText
+        android:id="@+id/et_book_title_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Book Title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_book_author_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Book Author"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_book_title_update"
+        app:layout_constraintStart_toStartOf="@+id/et_book_title_update"
+        app:layout_constraintTop_toBottomOf="@+id/et_book_title_update" />
+
+    <EditText
+        android:id="@+id/et_no_of_pages_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Number of Pages"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/et_book_author_update"
+        app:layout_constraintStart_toStartOf="@+id/et_book_author_update"
+        app:layout_constraintTop_toBottomOf="@+id/et_book_author_update" />
+
+    <Button
+        android:id="@+id/btn_update_book"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Update Book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_no_of_pages_update" />
+
+    <Button
+        android:id="@+id/btn_delete_book"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Delete Book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_update_book" />
+</androidx.constraintlayout.widget.ConstraintLayout>
